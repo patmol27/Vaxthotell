@@ -4,6 +4,7 @@ public class Plants implements Formula{
 
     // fält som subklasserna ärver
     //inkappsling
+    // eftersom att de är privata så måste jag ha getmetod för att nå dom
     private String plantType;
     private LiquidType liquidType;
     private String name;

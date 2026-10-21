@@ -2,7 +2,6 @@ import java.util.ArrayList;
 
 import java.util.Scanner;
 
-
 public class Main {
     public static void main(String[] args) {
 
@@ -19,6 +18,7 @@ public class Main {
         Plants cactus = new Cactus("Cactus",cactuses,"Igge",0.2);
         Plants carnivorousPlant = new CarnivorousPlant("Carnivorous plant",carnivorousPlants,"Meatloaf",0.7);
         Plants palm2 = new Palm("Palm",palms,"Olof",1);
+
 
         Scanner scan = new Scanner(System.in);
 
@@ -55,7 +55,6 @@ public class Main {
         }
         scan.close();
 
-
     }
     public static void allPlants(ArrayList plants, Plants plant1,Plants plant2,Plants plant3,
                                 Plants plant4){
@@ -78,22 +77,20 @@ public class Main {
 
     // interface
     // de 3 metoderna nedan anropar samma metod formel(); men får olika svar beroende på plant typ
-    public static void liquidToPalm(Plants palm,LiquidType palmer){
+    public static void liquidToPalm(Plants palm,LiquidType palms){
 
         System.out.println(palm.getPlantType());
-        System.out.println("You need "+ palm.formula() + " L " + palmer.getLiquidTypes() +" each day");
+        System.out.println("You need "+ palm.formula() + "L " + palms.getLiquidTypes() +" each day");
     }
 
-    public static void liquidToCactus(Plants kaktus, LiquidType kaktusar){
-        System.out.println(kaktus.getPlantType());
-        System.out.println("You need "+ kaktus.formula() + " cl " + kaktusar.getLiquidTypes() +" each day");
+    public static void liquidToCactus(Plants cactus, LiquidType cactuses){
+        System.out.println(cactus.getPlantType());
+        System.out.println("You need "+ cactus.formula() + "cl " + cactuses.getLiquidTypes() +" each day");
 
     }
-
-    public static void liquidToCarnivorousPlant(Plants köttÄtandeVäxt,LiquidType köttÄtandeVäxter){
-        System.out.println(köttÄtandeVäxt.getPlantType());
-        System.out.println("You need "+ köttÄtandeVäxt.formula() + " L " + köttÄtandeVäxter.getLiquidTypes() +" each day");
+    public static void liquidToCarnivorousPlant(Plants carnivorousPlant,LiquidType carnivorousPlants){
+        System.out.println(carnivorousPlant.getPlantType());
+        System.out.println("You need "+ carnivorousPlant.formula() + "L " + carnivorousPlants.getLiquidTypes() +" each day");
 
     }
-
 }
