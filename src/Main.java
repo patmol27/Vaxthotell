@@ -13,8 +13,8 @@ public class Main {
         LiquidType carnivorousPlants = LiquidType.CARNIVOROUSPLANT;
         System.out.println(cactuses.getLiquidTypes());
 
-        //Polyforfism. Det skapas nya objekt av typen Växter
-        // som har instanser av de olika klasserna
+        //Polyforfism. Det skapas nya objekt av olika växter
+        // och det skapas instnser av klassen Plant
         Plants palm1 = new Palm("Palm",palms,"Laura",5);
         Plants cactus = new Cactus("Cactus",cactuses,"Igge",0.2);
         Plants carnivorousPlant = new CarnivorousPlant("Carnivorous plant",carnivorousPlants,"Meatloaf",0.7);
@@ -54,7 +54,7 @@ public class Main {
 
         }
         scan.close();
-        
+
 
     }
     public static void allPlants(ArrayList plants, Plants plant1,Plants plant2,Plants plant3,
@@ -77,11 +77,11 @@ public class Main {
     }
 
     // interface
-    // de 3 metoderna nedan anropar samma metod formel(); men får olika svar beroende på typ
+    // de 3 metoderna nedan anropar samma metod formel(); men får olika svar beroende på plant typ
     public static void liquidToPalm(Plants palm,LiquidType palmer){
 
         System.out.println(palm.getPlantType());
-        System.out.println("You need "+ palm.formula() + " Litre " + palmer.getLiquidTypes() +" each day");
+        System.out.println("You need "+ palm.formula() + " L " + palmer.getLiquidTypes() +" each day");
     }
 
     public static void liquidToCactus(Plants kaktus, LiquidType kaktusar){
@@ -92,7 +92,7 @@ public class Main {
 
     public static void liquidToCarnivorousPlant(Plants köttÄtandeVäxt,LiquidType köttÄtandeVäxter){
         System.out.println(köttÄtandeVäxt.getPlantType());
-        System.out.println("You need "+ köttÄtandeVäxt.formula() + " litre " + köttÄtandeVäxter.getLiquidTypes() +" each day");
+        System.out.println("You need "+ köttÄtandeVäxt.formula() + " L " + köttÄtandeVäxter.getLiquidTypes() +" each day");
 
     }
 

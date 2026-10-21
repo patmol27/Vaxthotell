@@ -1,7 +1,9 @@
 
 public class Plants implements Formula{
+    // Plant är basklassen
 
     // fält som subklasserna ärver
+    //inkappsling
     private String plantType;
     private LiquidType liquidType;
     private String name;

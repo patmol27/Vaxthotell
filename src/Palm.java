@@ -3,7 +3,7 @@ public class Palm extends Plants implements Formula  {
     private double ammountOfLquid;
 
 
-    //arv. Ärver från klassen Växter
+    //arv. Ärver från klassen Plants
     public Palm(String plantType, LiquidType liquidType, String name, double height) {
         super(plantType, liquidType, name, height);
     }
