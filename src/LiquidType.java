@@ -1,9 +1,9 @@
 public enum LiquidType {
 
 
-    PALM("tap water"),
-    CACTUS("mineral water"),
-    CARNIVOROUSPLANT("protein drink");
+    TAPWATER("tap water"),
+    MINERALWATER("mineral water"),
+    PROTEINDRINK("protein drink");
     private final String liquidTypes;
 
     //inkappsling

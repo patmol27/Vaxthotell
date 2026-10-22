@@ -7,10 +7,11 @@ public class Main {
 
         ArrayList<Plants> hotelPlants = new ArrayList<>();
 
-        LiquidType palms = LiquidType.PALM;
-        LiquidType cactuses = LiquidType.CACTUS;
-        LiquidType carnivorousPlants = LiquidType.CARNIVOROUSPLANT;
-        System.out.println(cactuses.getLiquidTypes());
+        LiquidType palms = LiquidType.TAPWATER;
+        LiquidType cactuses = LiquidType.MINERALWATER;
+        LiquidType carnivorousPlants = LiquidType.PROTEINDRINK;
+
+
 
         //Polyforfism. Det skapas nya objekt av olika växter
         // och det skapas instnser av klassen Plant
@@ -55,6 +56,7 @@ public class Main {
         }
         scan.close();
 
+
     }
     public static void allPlants(ArrayList plants, Plants plant1,Plants plant2,Plants plant3,
                                 Plants plant4){
@@ -70,13 +72,14 @@ public class Main {
         System.out.println("Which plant do you wan to give liquid?");
         System.out.println("Cactus Igge");
         System.out.println("Palm Laura");
-        System.out.println("Carnivorous Meat Meatloaf");
+        System.out.println("Carnivorous Plant Meatloaf");
         System.out.println("Palm Olof");
+
 
     }
 
     // interface
-    // de 3 metoderna nedan anropar samma metod formel(); men får olika svar beroende på plant typ
+    // de 3 metoderna nedan anropar samma metod formla(); men får olika svar beroende på plant typ
     public static void liquidToPalm(Plants palm,LiquidType palms){
 
         System.out.println(palm.getPlantType());
